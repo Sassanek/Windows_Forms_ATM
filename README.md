@@ -1,0 +1,2 @@
+# gitZadanie
+Zadanie na zajecia
