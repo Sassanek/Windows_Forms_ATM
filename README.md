@@ -1,4 +1,2 @@
-# gitZadanie
-Projekt na zajęcia z środowiska i narzędzia wytwarzania oprogramowania
-
-Prosty program obsługit ATM z użycie C# oraz Windows Form
+# Simple_ATM_Software Project
+Project of simple ATM Software using C#/Wndows Forms
