@@ -63,6 +63,16 @@ namespace Simple_ATM_Software.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Generic_ATM {
+            get {
+                object obj = ResourceManager.GetObject("Generic_ATM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap max1 {
             get {
                 object obj = ResourceManager.GetObject("max1", resourceCulture);
