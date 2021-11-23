@@ -38,5 +38,10 @@ namespace Simple_ATM_Software
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

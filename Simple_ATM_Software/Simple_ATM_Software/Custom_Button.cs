@@ -14,7 +14,7 @@ namespace Simple_ATM_Software.Resources
         //Fields
         private int borderSize = 0;
         private int borderRadius = 40;
-        private Color borderColor = Color.Black;
+        private Color borderColor = Color.Blue;
 
         //Constructor
         public Custom_Button()
@@ -22,7 +22,7 @@ namespace Simple_ATM_Software.Resources
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
             this.Size = new Size(150, 40);
-            this.BackColor = Color.MediumSlateBlue;
+            this.BackColor = Color.Blue;
             this.ForeColor = Color.White;
         }
 
@@ -33,7 +33,7 @@ namespace Simple_ATM_Software.Resources
             path.StartFigure();
             path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
             path.AddArc(rect.Width - radius , rect.Y, radius, radius, 270, 90);
-            path.AddArc(rect.Width - radius, rect.Height, radius, radius, 0, 90);
+            path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 0, 90);
             path.AddArc(rect.X, rect.Height - radius, radius, radius, 90, 90);
             path.CloseFigure();
 

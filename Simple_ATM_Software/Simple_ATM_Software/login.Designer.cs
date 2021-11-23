@@ -38,6 +38,7 @@ namespace Simple_ATM_Software
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.login_confirm = new Simple_ATM_Software.Resources.Custom_Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,16 +103,17 @@ namespace Simple_ATM_Software
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(287, 28);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 47);
+            this.label1.Size = new System.Drawing.Size(687, 99);
             this.label1.TabIndex = 9;
             this.label1.Text = "Login";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -151,11 +153,26 @@ namespace Simple_ATM_Software
             this.textBox2.Size = new System.Drawing.Size(146, 34);
             this.textBox2.TabIndex = 13;
             // 
+            // login_confirm
+            // 
+            this.login_confirm.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.login_confirm.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.login_confirm.FlatAppearance.BorderSize = 0;
+            this.login_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_confirm.ForeColor = System.Drawing.Color.White;
+            this.login_confirm.Location = new System.Drawing.Point(280, 329);
+            this.login_confirm.Name = "login_confirm";
+            this.login_confirm.Size = new System.Drawing.Size(150, 40);
+            this.login_confirm.TabIndex = 14;
+            this.login_confirm.Text = "Confirm";
+            this.login_confirm.UseVisualStyleBackColor = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 390);
+            this.Controls.Add(this.login_confirm);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -166,7 +183,6 @@ namespace Simple_ATM_Software
             this.Name = "login";
             this.Text = "login";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +199,6 @@ namespace Simple_ATM_Software
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private Resources.Custom_Button login_confirm;
     }
 }
