@@ -33,6 +33,7 @@ namespace Simple_ATM_Software
             this.Exit = new System.Windows.Forms.Button();
             this.minimize = new System.Windows.Forms.Button();
             this.window_size = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // simple_atm_label
@@ -96,6 +97,13 @@ namespace Simple_ATM_Software
             this.window_size.UseVisualStyleBackColor = true;
             this.window_size.Click += new System.EventHandler(this.window_size_Click);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(-1, 436);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(801, 23);
+            this.progressBar1.TabIndex = 7;
+            // 
             // Lign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -103,6 +111,7 @@ namespace Simple_ATM_Software
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.window_size);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.Exit);
@@ -124,6 +133,7 @@ namespace Simple_ATM_Software
         public System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button minimize;
         private System.Windows.Forms.Button window_size;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
