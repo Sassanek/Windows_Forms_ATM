@@ -138,7 +138,7 @@ namespace Simple_ATM_Software
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.textBox1.Location = new System.Drawing.Point(340, 157);
+            this.textBox1.Location = new System.Drawing.Point(357, 158);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 34);
             this.textBox1.TabIndex = 12;
@@ -146,7 +146,7 @@ namespace Simple_ATM_Software
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.textBox2.Location = new System.Drawing.Point(340, 224);
+            this.textBox2.Location = new System.Drawing.Point(355, 226);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(146, 34);
             this.textBox2.TabIndex = 13;
