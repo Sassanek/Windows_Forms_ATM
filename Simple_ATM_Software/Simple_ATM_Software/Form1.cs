@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Simple_ATM_Software
 {
-    public partial class Lign : Form
+    public partial class Form1 : Form
     {
-        public Lign()
+        public Form1()
         {
             InitializeComponent();
         }

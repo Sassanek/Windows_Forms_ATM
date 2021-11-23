@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,15 +9,14 @@ namespace Simple_ATM_Software
     static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// Główny punkt wejścia dla aplikacji.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Lign());
+            Application.Run(new Form1());
         }
     }
 }

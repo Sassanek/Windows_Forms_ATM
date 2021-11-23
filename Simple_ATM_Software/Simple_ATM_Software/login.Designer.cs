@@ -47,7 +47,7 @@ namespace Simple_ATM_Software
             this.minimize.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.max1;
             this.minimize.FlatAppearance.BorderSize = 0;
             this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimize.Location = new System.Drawing.Point(711, 0);
+            this.minimize.Location = new System.Drawing.Point(609, 0);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(25, 25);
             this.minimize.TabIndex = 6;
@@ -60,7 +60,7 @@ namespace Simple_ATM_Software
             this.window_size.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.window2;
             this.window_size.FlatAppearance.BorderSize = 0;
             this.window_size.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.window_size.Location = new System.Drawing.Point(742, 0);
+            this.window_size.Location = new System.Drawing.Point(636, 0);
             this.window_size.Name = "window_size";
             this.window_size.Size = new System.Drawing.Size(25, 25);
             this.window_size.TabIndex = 7;
@@ -77,10 +77,10 @@ namespace Simple_ATM_Software
             this.Exit.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.Exit.FlatAppearance.BorderSize = 5;
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exit.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Exit.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.Exit.ForeColor = System.Drawing.Color.Transparent;
             this.Exit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Exit.Location = new System.Drawing.Point(773, 0);
+            this.Exit.Location = new System.Drawing.Point(663, 0);
             this.Exit.Name = "Exit";
             this.Exit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Exit.Size = new System.Drawing.Size(25, 25);
@@ -97,17 +97,17 @@ namespace Simple_ATM_Software
             this.panel1.Controls.Add(this.window_size);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 114);
+            this.panel1.Size = new System.Drawing.Size(687, 99);
             this.panel1.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(335, 32);
+            this.label1.Location = new System.Drawing.Point(287, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 47);
             this.label1.TabIndex = 9;
@@ -116,9 +116,9 @@ namespace Simple_ATM_Software
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(192, 169);
+            this.label2.Location = new System.Drawing.Point(165, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(199, 47);
             this.label2.TabIndex = 10;
@@ -127,9 +127,9 @@ namespace Simple_ATM_Software
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(296, 247);
+            this.label3.Location = new System.Drawing.Point(254, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 47);
             this.label3.TabIndex = 11;
@@ -137,25 +137,25 @@ namespace Simple_ATM_Software
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(397, 181);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.textBox1.Location = new System.Drawing.Point(340, 157);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 34);
+            this.textBox1.Size = new System.Drawing.Size(146, 34);
             this.textBox1.TabIndex = 12;
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(397, 259);
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.textBox2.Location = new System.Drawing.Point(340, 224);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 34);
+            this.textBox2.Size = new System.Drawing.Size(146, 34);
             this.textBox2.TabIndex = 13;
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
