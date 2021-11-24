@@ -43,7 +43,7 @@ namespace Simple_ATM_Software
             this.simple_atm_label.AutoSize = true;
             this.simple_atm_label.Font = new System.Drawing.Font("Britannic Bold", 27.75F);
             this.simple_atm_label.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.simple_atm_label.Location = new System.Drawing.Point(244, 25);
+            this.simple_atm_label.Location = new System.Drawing.Point(301, 25);
             this.simple_atm_label.Name = "simple_atm_label";
             this.simple_atm_label.Size = new System.Drawing.Size(211, 41);
             this.simple_atm_label.TabIndex = 2;
@@ -54,9 +54,9 @@ namespace Simple_ATM_Software
             // progressBar1
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(-1, 378);
+            this.progressBar1.Location = new System.Drawing.Point(-2, 438);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(687, 20);
+            this.progressBar1.Size = new System.Drawing.Size(806, 20);
             this.progressBar1.TabIndex = 7;
             // 
             // label1
@@ -65,7 +65,7 @@ namespace Simple_ATM_Software
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(311, 324);
+            this.label1.Location = new System.Drawing.Point(368, 384);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 38);
             this.label1.TabIndex = 8;
@@ -77,7 +77,7 @@ namespace Simple_ATM_Software
             this.window_size.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.window2;
             this.window_size.FlatAppearance.BorderSize = 0;
             this.window_size.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.window_size.Location = new System.Drawing.Point(638, 0);
+            this.window_size.Location = new System.Drawing.Point(740, 0);
             this.window_size.Name = "window_size";
             this.window_size.Size = new System.Drawing.Size(25, 25);
             this.window_size.TabIndex = 6;
@@ -90,7 +90,7 @@ namespace Simple_ATM_Software
             this.minimize.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.max1;
             this.minimize.FlatAppearance.BorderSize = 0;
             this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimize.Location = new System.Drawing.Point(611, 0);
+            this.minimize.Location = new System.Drawing.Point(710, 0);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(25, 25);
             this.minimize.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace Simple_ATM_Software
             this.Exit.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.Exit.ForeColor = System.Drawing.Color.Transparent;
             this.Exit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Exit.Location = new System.Drawing.Point(664, 0);
+            this.Exit.Location = new System.Drawing.Point(770, 0);
             this.Exit.Name = "Exit";
             this.Exit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Exit.Size = new System.Drawing.Size(25, 25);
@@ -124,7 +124,7 @@ namespace Simple_ATM_Software
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(686, 390);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.window_size);

@@ -31,21 +31,27 @@ namespace Simple_ATM_Software
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.minimize = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
+            this.window_size = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.login_confirm = new Simple_ATM_Software.Resources.Custom_Button();
             this.login_signup = new Simple_ATM_Software.Resources.Custom_Button();
-            this.minimize = new System.Windows.Forms.Button();
-            this.Exit = new System.Windows.Forms.Button();
-            this.window_size = new System.Windows.Forms.Button();
+            this.login_confirm = new Simple_ATM_Software.Resources.Custom_Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.minimize);
             this.panel1.Controls.Add(this.Exit);
@@ -57,85 +63,17 @@ namespace Simple_ATM_Software
             // 
             // label1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(687, 99);
+            this.label1.Size = new System.Drawing.Size(687, 110);
             this.label1.TabIndex = 9;
             this.label1.Text = "Login";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(163, 125);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(199, 47);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "ACC NUM: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(250, 200);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 47);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "PIN: ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.textBox1.Location = new System.Drawing.Point(355, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 34);
-            this.textBox1.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.textBox2.Location = new System.Drawing.Point(351, 213);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 34);
-            this.textBox2.TabIndex = 13;
-            // 
-            // login_confirm
-            // 
-            this.login_confirm.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.login_confirm.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.login_confirm.FlatAppearance.BorderSize = 0;
-            this.login_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.login_confirm.ForeColor = System.Drawing.Color.White;
-            this.login_confirm.Location = new System.Drawing.Point(347, 274);
-            this.login_confirm.Name = "login_confirm";
-            this.login_confirm.Size = new System.Drawing.Size(150, 40);
-            this.login_confirm.TabIndex = 14;
-            this.login_confirm.Text = "LOGIN";
-            this.login_confirm.UseVisualStyleBackColor = false;
-            // 
-            // login_signup
-            // 
-            this.login_signup.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.login_signup.BackColor = System.Drawing.SystemColors.Control;
-            this.login_signup.FlatAppearance.BorderSize = 0;
-            this.login_signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_signup.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.login_signup.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.login_signup.Location = new System.Drawing.Point(347, 338);
-            this.login_signup.Name = "login_signup";
-            this.login_signup.Size = new System.Drawing.Size(150, 40);
-            this.login_signup.TabIndex = 15;
-            this.login_signup.Text = "SIGNUP";
-            this.login_signup.UseVisualStyleBackColor = false;
             // 
             // minimize
             // 
@@ -184,6 +122,119 @@ namespace Simple_ATM_Software
             this.window_size.UseVisualStyleBackColor = true;
             this.window_size.Click += new System.EventHandler(this.window_size_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(133, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(199, 47);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "ACC NUM: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 26.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(237, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 47);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "PIN: ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.textBox1.Location = new System.Drawing.Point(338, 138);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 34);
+            this.textBox1.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.textBox2.Location = new System.Drawing.Point(338, 214);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(150, 34);
+            this.textBox2.TabIndex = 13;
+            // 
+            // login_signup
+            // 
+            this.login_signup.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.login_signup.BackColor = System.Drawing.SystemColors.Control;
+            this.login_signup.FlatAppearance.BorderSize = 0;
+            this.login_signup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_signup.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.login_signup.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.login_signup.Location = new System.Drawing.Point(338, 338);
+            this.login_signup.Name = "login_signup";
+            this.login_signup.Size = new System.Drawing.Size(150, 40);
+            this.login_signup.TabIndex = 15;
+            this.login_signup.Text = "SIGNUP";
+            this.login_signup.UseVisualStyleBackColor = false;
+            // 
+            // login_confirm
+            // 
+            this.login_confirm.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.login_confirm.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.login_confirm.FlatAppearance.BorderSize = 0;
+            this.login_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.login_confirm.ForeColor = System.Drawing.Color.White;
+            this.login_confirm.Location = new System.Drawing.Point(334, 275);
+            this.login_confirm.Name = "login_confirm";
+            this.login_confirm.Size = new System.Drawing.Size(150, 40);
+            this.login_confirm.TabIndex = 14;
+            this.login_confirm.Text = "LOGIN";
+            this.login_confirm.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.max1;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(597, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.window2;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(628, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(25, 25);
+            this.button2.TabIndex = 11;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.X3;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.CausesValidation = false;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.FlatAppearance.BorderSize = 5;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.button3.ForeColor = System.Drawing.Color.Transparent;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.Location = new System.Drawing.Point(659, 0);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(25, 25);
+            this.button3.TabIndex = 12;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,5 +270,8 @@ namespace Simple_ATM_Software
         private System.Windows.Forms.TextBox textBox2;
         private Resources.Custom_Button login_confirm;
         private Resources.Custom_Button login_signup;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
     }
 }
