@@ -115,6 +115,7 @@ namespace Simple_ATM_Software
             this.Exit.Size = new System.Drawing.Size(25, 25);
             this.Exit.TabIndex = 4;
             this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // label7
             // 

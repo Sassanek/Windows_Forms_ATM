@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Simple_ATM_Software
 {
-    public partial class account : Form
+    public partial class withdraw : Form
     {
-        public account()
+        public withdraw()
         {
             InitializeComponent();
-        }
-
-        private void account_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

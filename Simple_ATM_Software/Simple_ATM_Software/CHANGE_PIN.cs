@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Simple_ATM_Software
 {
-    public partial class register_form : Form
+    public partial class CHANGE_PIN : Form
     {
-        public register_form()
+        public CHANGE_PIN()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Simple_ATM_Software
 {
-    partial class Form1
+    partial class start
     {
         /// <summary>
         ///  Required designer variable.

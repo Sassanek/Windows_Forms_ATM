@@ -30,6 +30,9 @@ namespace Simple_ATM_Software
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.login_exit = new System.Windows.Forms.Button();
+            this.Login_window = new System.Windows.Forms.Button();
+            this.Login_min = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.minimize = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
@@ -40,18 +43,15 @@ namespace Simple_ATM_Software
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.login_signup = new Simple_ATM_Software.Resources.Custom_Button();
             this.login_confirm = new Simple_ATM_Software.Resources.Custom_Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.login_exit);
+            this.panel1.Controls.Add(this.Login_window);
+            this.panel1.Controls.Add(this.Login_min);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.minimize);
             this.panel1.Controls.Add(this.Exit);
@@ -60,6 +60,53 @@ namespace Simple_ATM_Software
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(687, 99);
             this.panel1.TabIndex = 9;
+            // 
+            // login_exit
+            // 
+            this.login_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.login_exit.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.login_exit.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.X3;
+            this.login_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.login_exit.CausesValidation = false;
+            this.login_exit.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.login_exit.FlatAppearance.BorderSize = 5;
+            this.login_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_exit.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.login_exit.ForeColor = System.Drawing.Color.Transparent;
+            this.login_exit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.login_exit.Location = new System.Drawing.Point(659, 0);
+            this.login_exit.Name = "login_exit";
+            this.login_exit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.login_exit.Size = new System.Drawing.Size(25, 25);
+            this.login_exit.TabIndex = 12;
+            this.login_exit.UseVisualStyleBackColor = false;
+            this.login_exit.Click += new System.EventHandler(this.loginExit_Click);
+            // 
+            // Login_window
+            // 
+            this.Login_window.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login_window.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.window2;
+            this.Login_window.FlatAppearance.BorderSize = 0;
+            this.Login_window.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_window.Location = new System.Drawing.Point(628, 0);
+            this.Login_window.Name = "Login_window";
+            this.Login_window.Size = new System.Drawing.Size(25, 25);
+            this.Login_window.TabIndex = 11;
+            this.Login_window.UseVisualStyleBackColor = true;
+            this.Login_window.Click += new System.EventHandler(this.loginWindow_Click);
+            // 
+            // Login_min
+            // 
+            this.Login_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Login_min.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.max1;
+            this.Login_min.FlatAppearance.BorderSize = 0;
+            this.Login_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_min.Location = new System.Drawing.Point(597, 0);
+            this.Login_min.Name = "Login_min";
+            this.Login_min.Size = new System.Drawing.Size(25, 25);
+            this.Login_min.TabIndex = 10;
+            this.Login_min.UseVisualStyleBackColor = true;
+            this.Login_min.Click += new System.EventHandler(this.loginMin_Click);
             // 
             // label1
             // 
@@ -73,7 +120,6 @@ namespace Simple_ATM_Software
             this.label1.TabIndex = 9;
             this.label1.Text = "Login";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // minimize
             // 
@@ -86,7 +132,7 @@ namespace Simple_ATM_Software
             this.minimize.Size = new System.Drawing.Size(25, 25);
             this.minimize.TabIndex = 6;
             this.minimize.UseVisualStyleBackColor = true;
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            this.minimize.Click += new System.EventHandler(this.loginMin_Click);
             // 
             // Exit
             // 
@@ -107,7 +153,7 @@ namespace Simple_ATM_Software
             this.Exit.Size = new System.Drawing.Size(25, 25);
             this.Exit.TabIndex = 8;
             this.Exit.UseVisualStyleBackColor = false;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            this.Exit.Click += new System.EventHandler(this.loginExit_Click);
             // 
             // window_size
             // 
@@ -120,7 +166,7 @@ namespace Simple_ATM_Software
             this.window_size.Size = new System.Drawing.Size(25, 25);
             this.window_size.TabIndex = 7;
             this.window_size.UseVisualStyleBackColor = true;
-            this.window_size.Click += new System.EventHandler(this.window_size_Click);
+            this.window_size.Click += new System.EventHandler(this.loginWindow_Click);
             // 
             // label2
             // 
@@ -190,51 +236,6 @@ namespace Simple_ATM_Software
             this.login_confirm.Text = "LOGIN";
             this.login_confirm.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.max1;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(597, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.window2;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(628, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(25, 25);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.BackgroundImage = global::Simple_ATM_Software.Properties.Resources.X3;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.CausesValidation = false;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.FlatAppearance.BorderSize = 5;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(659, 0);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(25, 25);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,8 +271,8 @@ namespace Simple_ATM_Software
         private System.Windows.Forms.TextBox textBox2;
         private Resources.Custom_Button login_confirm;
         private Resources.Custom_Button login_signup;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Login_min;
+        private System.Windows.Forms.Button Login_window;
+        public System.Windows.Forms.Button login_exit;
     }
 }

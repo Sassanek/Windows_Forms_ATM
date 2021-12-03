@@ -8,15 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Simple_ATM_Software
+namespace WindowsFormsApp1
 {
-    public partial class login : Form
+    public partial class home : Form
     {
-        public login()
+        public home()
         {
             InitializeComponent();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void home_Load(object sender, EventArgs e)
+        {
+
+        }
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -39,12 +48,7 @@ namespace Simple_ATM_Software
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void home_account_Click(object sender, EventArgs e)
         {
 
         }

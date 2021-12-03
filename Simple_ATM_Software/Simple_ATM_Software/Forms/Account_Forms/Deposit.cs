@@ -1,28 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Simple_ATM_Software
 {
-    public partial class Form1 : Form
+    public partial class Deposit : Form
     {
-        public Form1()
+        public Deposit()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void minimize_Click(object sender, EventArgs e)
         {
 
         }
@@ -42,11 +30,6 @@ namespace Simple_ATM_Software
             {
                 this.WindowState = FormWindowState.Maximized;
             }
-        }
-
-        private void minimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
